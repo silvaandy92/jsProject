@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1 class="bg-primary">Contact Management System<h1>
+      <div class="text-center text-info" id="result"></div>
+      
+      <form class="border p-3" onsubmit="event.preventDefault();">
+        <div>
+          <label for='contactName'>Name</label>
+          <input type='text' class='form-control' id='contactName'/>        
+        </div>
+        <div> 
+          <label for='number1'>Email</label>
+          <input type='number' class='form-control' id='email'/>
+        </div>
+        <div>
+          <label for='number1'>Phone</label>
+          <input type='number' class='form-control' id='phone'/>        
+        </div>
+        <div class='form-action-buttons'>
+          <input class="btn btn-primary" type="submit" value="Submit" />
+        </div> 
+      </form>
+      </div>
+    </div>
+    <td>
+      <table class='list' id="contactList">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </td>
+    <script src="/app.js"></script>
+  </body>
+</html>
