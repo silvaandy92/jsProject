@@ -1,3 +1,8 @@
+#header {
+    color: white;
+    height: 50px;
+}
+
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
@@ -5,7 +10,7 @@ td, th {
     padding-left: 20px;
     padding-right: 20px;
 }
-tr:nth-child(even),table.list thead>tr {
+tr:nth-child(even),table.table thead>tr {
     background-color: #dddddd;
 }
 
@@ -23,7 +28,7 @@ input[type=submit]{
     width: 30%;
     background-color: green;
     color: white;
-    padding: 14px 20px;
+    padding: 14px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -34,10 +39,13 @@ form div.form-action-buttons{
 }
 
 a{
-    cursor: pointer;
-    text-decoration: underline;
-    color: #0000ee;
-    margin-right: 4px;
+    transition-duration: 0.4s;
+    color: white;
+}
+
+a:hover {
+    background-color: red; /* Green */
+  color: white;
 }
 
 label.validation-error{
@@ -47,7 +55,4 @@ label.validation-error{
 
 .hide{
     display:none;
-}
-col {
-    width: 50%;;
 }

@@ -11,55 +11,52 @@
 
   </head>
   <body>
-    <h2 class="display-8 bg-primary" id="header">Contact Management</h2>
-    <div class='container'>
+    <h2 class="bg-primary" id="header">Contact Management</h2>
+    <div class='container mt-4'>
         <div class='row'>
             <div class='col'>
+                <table>
+                    <tr>
+                        <td>
+                            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                                <div>
+                                    <label>Name</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                                    <input type="text" name="fullName" id="fullName">
+                                </div>
+                                <div>
+                                    <label>Email</label>
+                                    <input type="text" name="email" id="email">
+                                </div>
+                                <div>
+                                    <label>Phone</label>
+                                    <input type="text" name="phone" id="phone">
+                                </div>
+                                <div class="form-action-buttons">
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </td>
+                    </div>
+                        <div class='col'>
+                            <td>
+                                <table class="table table-striped mt-5" id="contactList">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Phone</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 
-    <table>
-        <tr>
-            <td>
-                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
-                    <div>
-                        <label>Name</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
-                        <input type="text" name="fullName" id="fullName">
-                    </div>
-                    <div>
-                        <label>Email</label>
-                        <input type="text" name="email" id="email">
-                    </div>
-                    <div>
-                        <label>Phone</label>
-                        <input type="text" name="phone" id="phone">
-                    </div>
-                        <div  class="form-action-buttons">
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
-            </td>
-        </div>
-
-
-        <div class='col'>
-            <td>
-                <table class="list" id="contactList">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th></th>
+                                    </tbody>
+                                </table>
+                            </td>
                         </tr>
-                    </thead>
-                    <tbody>
-
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </table>
-    <script src="script.js"></script>
-</div>
+                    </table>
+                    <script src="script.js"></script>
+                </div>
 </div>
 </div>  
 </body>

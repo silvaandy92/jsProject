@@ -30,7 +30,7 @@ function insertNewRecord(data) {
     cell3.innerHTML = data.phone;
     cell4 = newRow.insertCell(3);
     cell4.innerHTML = `<a onClick="editContact(this)">Edit</a>
-                       <a onClick="onDelete(this)">Delete</a>`;
+                       <a onClick="deleteContact(this)">Delete</a>`;
 }
 
 function resetForm() {
@@ -40,7 +40,7 @@ function resetForm() {
     selectedRow = null;
 }
 
-function editContat(td) {
+function editContact(td) {
     selectedRow = td.parentElement.parentElement;
     document.getElementById("fullName").value = selectedRow.cells[0].innerHTML;
     document.getElementById("email").value = selectedRow.cells[1].innerHTML;
@@ -52,7 +52,7 @@ function updateRecord(formData) {
     selectedRow.cells[2].innerHTML = formData.phone;
 }
 
-function onDelete(td) {
+function deleteContact(td) {
     if (confirm('Are you sure?')) {
         row = td.parentElement.parentElement;
         document.getElementById("contactList").deleteRow(row.rowIndex);
