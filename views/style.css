@@ -38,15 +38,17 @@ form div.form-action-buttons{
     text-align: right;
 }
 
-a{
+b{
     transition-duration: 0.4s;
     color: white;
 }
 
-a:hover {
-    background-color: red; /* Green */
-  color: white;
+b:hover {
+    background-color: gold; 
+    color: white;
+    cursor: pointer;
 }
+
 
 label.validation-error{
     color:   red;
@@ -55,4 +57,8 @@ label.validation-error{
 
 .hide{
     display:none;
+}
+
+.col {
+    border: 1px solid black;
 }

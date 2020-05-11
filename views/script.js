@@ -29,8 +29,8 @@ function insertNewRecord(data) {
     cell3 = newRow.insertCell(2);
     cell3.innerHTML = data.phone;
     cell4 = newRow.insertCell(3);
-    cell4.innerHTML = `<a onClick="editContact(this)">Edit</a>
-                       <a onClick="deleteContact(this)">Delete</a>`;
+    cell4.innerHTML = `<b onClick="editContact(this)">Edit</b>
+                       <b onClick="deleteContact(this)">Delete</b>`;
 }
 
 function resetForm() {
