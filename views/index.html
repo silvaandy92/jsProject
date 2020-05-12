@@ -16,29 +16,29 @@
         <div class='row'>
             <div class='col'>
                 <table>
-                    <tr>
-                        <td>
+                    <tr>                        
                             <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                                 <p>Add Contact</p>
                                 <div>
                                     <label>Name</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
-                                    <input type="text" name="fullName" id="fullName">
+                                    <input type="text" name="fullName" id="fullName" required>
                                 </div>
                                 <div>
                                     <label>Email</label>
-                                    <input type="text" name="email" id="email">
+                                    <input type="text" name="email" id="email" required placeholder="user@domain">
                                 </div>
                                 <div>
                                     <label>Phone</label>
-                                    <input type="text" name="phone" id="phone">
+                                    <input type="text" name="phone" id="phone" required> 
                                 </div>
                                 <div class="form-action-buttons">
                                     <input type="submit" value="Submit">
                                 </div>
                             </form>
-                        </td>
                         
-                    </div>
+                    </tr>
+                </table>
+                </div>
                         <div class='col'>
                             <td>
                                 <table class="table table-striped mt-5" id="contactList">

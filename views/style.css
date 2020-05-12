@@ -14,7 +14,7 @@ tr:nth-child(even),table.table thead>tr {
     background-color: #dddddd;
 }
 
-input[type=text], input[type=number] {
+input[type=text] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -25,29 +25,37 @@ input[type=text], input[type=number] {
 }
 
 input[type=submit]{
-    width: 30%;
+    width:30%;
     background-color: green;
     color: white;
-    padding: 14px;
+    padding: 10px;
+    padding-bottom: 10px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    justify-content: right;
 }
 
 form div.form-action-buttons{
     text-align: right;
 }
 
-b{
-    transition-duration: 0.4s;
-    color: white;
+edit {
+    border-radius: 8px;
+
+    border: 2px solid gold;
+    cursor: pointer;
+    display: inline-block;
 }
 
-b:hover {
-    background-color: gold; 
-    color: white;
+delete {
+    border-radius: 8px;
+
+    border: 2px solid red;
     cursor: pointer;
+    display: inline-block;
 }
+
 
 
 label.validation-error{
